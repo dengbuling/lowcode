@@ -4,7 +4,7 @@ export function BlockConfig(block, container) {
         const config = {
             text: () => {
                 block.value.props["color"] = "#000000"
-                block.value.props["text"] = "<a>标签文本"
+                block.value.props["text"] = "<a>标签909090文本"
                 block.value.props["size"] = 16
                 block.value.props["FontWeight"] = 400
                 block.value.props["vantTab"] = container.activeTabName ? container.activeTabName : 'none'
