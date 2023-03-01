@@ -1,0 +1,28 @@
+.editor-left .el-card{
+    border-top: none;
+    height: 100%;
+    border-top: none;
+    border-left:none;
+    border-radius: 0;
+}
+.editor-right .el-card{
+    border-top: none;
+    height: 100%;
+    border-top: none;
+    border-radius: 0;
+}
+.editor-left .el-card__body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.editor-left-card .el-card__body div:nth-child(1){
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+}
+.editor-left-card .el-card__body div:nth-child(2){
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+}
+.el-form-item__label{
+    font-size: 0.9rem;
+}

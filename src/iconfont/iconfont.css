@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1660271082640') format('truetype');
+}
+
+/* .iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* icon-开头的自动做样式处理 */
+[class*='icon-'] {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-baocun:before {
+  content: "\e76d";
+}
+
+.icon-bianji:before {
+  content: "\e76e";
+}
+
+.icon-anquan:before {
+  content: "\e76f";
+}
+
+.icon-biaoqian:before {
+  content: "\e770";
+}
+
+.icon-chakan:before {
+  content: "\e771";
+}
+
+.icon-caifu:before {
+  content: "\e772";
+}
+
+.icon-danju:before {
+  content: "\e773";
+}
+
+.icon-dianzan:before {
+  content: "\e774";
+}
+
+.icon-danwei:before {
+  content: "\e775";
+}
+
+.icon-chazhao:before {
+  content: "\e776";
+}
+
+.icon-faxian:before {
+  content: "\e777";
+}
+
+.icon-gerenziliao:before {
+  content: "\e778";
+}
+
+.icon-kefu:before {
+  content: "\e779";
+}
+
+.icon-huiyuan:before {
+  content: "\e77a";
+}
+
+.icon-dianpu:before {
+  content: "\e77b";
+}
+
+.icon-fuzhi:before {
+  content: "\e77c";
+}
+
+.icon-lianjie:before {
+  content: "\e77d";
+}
+
+.icon-shangchuan1:before {
+  content: "\e77e";
+}
+
+.icon-tiaojie:before {
+  content: "\e77f";
+}
+
+.icon-qianbao:before {
+  content: "\e780";
+}
+
+.icon-fenxiang:before {
+  content: "\e781";
+}
+
+.icon-shezhi:before {
+  content: "\e782";
+}
+
+.icon-saoma:before {
+  content: "\e783";
+}
+
+.icon-shanchu:before {
+  content: "\e784";
+}
+
+.icon-shangchuan2:before {
+  content: "\e785";
+}
+
+.icon-shijian:before {
+  content: "\e786";
+}
+
+.icon-liucheng:before {
+  content: "\e787";
+}
+
+.icon-tongzhi:before {
+  content: "\e788";
+}
+
+.icon-shoucang:before {
+  content: "\e789";
+}
+
+.icon-shuqian:before {
+  content: "\e78a";
+}
+
+.icon-shuaxin:before {
+  content: "\e78b";
+}
+
+.icon-wenjianjia:before {
+  content: "\e78c";
+}
+
+.icon-shipin:before {
+  content: "\e78d";
+}
+
+.icon-tongxun:before {
+  content: "\e78e";
+}
+
+.icon-tupian:before {
+  content: "\e78f";
+}
+
+.icon-tuxing2:before {
+  content: "\e790";
+}
+

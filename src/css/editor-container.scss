@@ -1,0 +1,44 @@
+/* 内容区域tab */
+.editor-container-canvas-tab .el-tabs__header{
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 41rem);
+    margin:0;
+    background-color: #f3f3f3;
+    border-top: 1px solid #d9dbdd;
+    z-index: 10;
+}
+.editor-container-canvas-tab .el-tabs__item{
+    font-size: 1rem;
+}
+.editor-container-canvas-tab .el-tabs__new-tab{
+    float: left;
+    margin:10px;
+}
+.editor-container-canvas-tab .el-tabs__item.is-active{
+    color: black;
+    background-color: #fff;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item .is-icon-close{
+    height: 14px;
+    width: 14px;
+}
+.el-tabs--card>.el-tabs__header .el-tabs__item.is-closable:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+// 辅助线竖线
+.editor-container-linex{
+    position: absolute;
+    border-left: 2px solid red;
+    top: 0;
+    bottom: 0;
+}
+// 辅助线横线
+.editor-container-liney{
+    position: absolute;
+    border-top: 2px solid red;
+    right:0;
+    left:0;
+}

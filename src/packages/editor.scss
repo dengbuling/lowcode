@@ -1,0 +1,91 @@
+@import "../iconfont/iconfont.css";
+
+.editor{
+    width: 100%;
+    display: flex;
+    flex: 1;
+    height: calc(100% - 55px);
+    &-left{
+        width: 17rem;
+    }
+    &-right{
+        width: 24rem;
+        border-left: 1px solid #e4e7ed;
+        &-card{
+            padding: 1.2rem;
+            box-sizing: border-box;
+        }
+    }
+    &-top{
+        position: absolute;
+        right: 280px;
+        left: 280px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-button{
+            width: 60px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0,0,0,0.3);
+            color: #fff;
+            user-select: none;
+            cursor: pointer;
+            // 当前按钮的下一个按钮（第一个&是当前元素，第二个&是后面的元素）
+            &+&{
+                margin-left: 3px;
+            }
+        }
+    }
+    &-container{
+        position: relative;
+        flex: 1;
+        height: 100%;
+        box-sizing: border-box;
+        &-canvas{
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: calc(100% - 45px);
+            &__content{
+               margin: 20px auto;
+               background-color: #fcd3d3;
+               position: relative;
+            }
+        }
+    }
+}
+
+// dropdown
+.dropdown{
+    display: none;
+    position: absolute;
+    background: #fff;
+    box-shadow: 2px 2px #ccc;
+}
+.dropdown-isShow{
+    display: block;
+}
+.dropdown-item{
+    line-height: 30px;
+    width: 100px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+.el-button,.el-input{
+    transition: none;
+}
+// 不显示下拉框
+.add-row .el-input__suffix {
+    display: none;
+}
+.add-row .el-select .el-input__inner {
+    // cursor: pointer;
+    font-size: 12px;
+}
