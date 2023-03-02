@@ -519,8 +519,9 @@ registerConfig.register({
             {/* <> */}
             <style>
                 {
-                    `div{color:blue;}
-                    span{color:red}
+                    `
+                    // div{color:blue;}
+                    // span{color:red}
                     .willname .van-sticky{
                         background-image: url('${block.props.tabUrl}');
                         // background: yellow;
@@ -532,7 +533,7 @@ registerConfig.register({
                    }
                    .van-tab--active{
                     transform: scale(1.2);
-                    background-image: url('${block.props.tabUrl}');
+                    background-image: url('${block.props.tabActiveUrl}');
                     background-size: 100% 100%;
                     background-repeat: no-repeat;
                     .slotTab{

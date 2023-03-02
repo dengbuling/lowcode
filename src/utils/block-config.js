@@ -88,6 +88,7 @@ export function BlockConfig(block, container) {
             tab: () => {
                 block.value.style.width = 375
                 block.value.style.height = 100
+                block.value.props["vantTable"] = [{text:"999"}]
                 block.value.isFirst = false
             }
         }[block.value.key]()

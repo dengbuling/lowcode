@@ -8,9 +8,10 @@ export default defineComponent({
         modelValue: { type: Object },
         activeTab: { type: String },
         activeTabIndex: { type: Number },
-        tabUrl:{ type: String }
+        tabUrl:{ type: String },
+        tabActiveUrl:{ type: String }
     },
-    emits: ['update:modelValue', 'update:activeTab', 'update:activeTabIndex', 'update:tabUrl'],
+    emits: ['update:modelValue', 'update:activeTab', 'update:activeTabIndex', 'update:tabUrl', 'update:tabActiveUrl'],
     setup(props, { emit }) {
 
         const state = reactive({
@@ -60,6 +61,16 @@ export default defineComponent({
             }
         })
 
+        // 当前Radio选择内容index
+        let tabActiveUrl = computed({
+            get() {
+                return props.tabActiveUrl
+            },
+            set(newValue) {
+                emit('update:tabActiveUrl', newValue)
+            }
+        })
+
         // 首次挂载组件时赋值
         onMounted(() => {
             state.data = data.value || []
@@ -105,6 +116,7 @@ export default defineComponent({
                     }
                 </ElRadioGroup>
                 <Upload v-model={tabUrl.value}></Upload>
+                <Upload v-model={tabActiveUrl.value}></Upload>
                 <div>
                     <ElButton onClick={add}>添加</ElButton>
                     <ElButton onClick={remove}>删除</ElButton>
